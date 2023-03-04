@@ -2,12 +2,12 @@ package com.manager;
 
 import java.io.Serializable;
 
-public class MyContacts implements Serializable {
+public class Contact implements Serializable {
     private String name;
     private String phoneNumber;
     private String email;
 
-    public MyContacts(String name, String phoneNumber, String email) {
+    public Contact(String name, String phoneNumber, String email) {
         this.name = name;
         this.phoneNumber = phoneNumber;
         this.email = email;

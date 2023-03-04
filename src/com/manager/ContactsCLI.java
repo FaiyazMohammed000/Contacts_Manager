@@ -65,7 +65,7 @@ public class ContactsCLI {
         String phoneNumber=scanner.nextLine();
         System.out.println("Enter the email");
         String email=scanner.nextLine();
-        MyContacts contact=new MyContacts(name,phoneNumber,email);
+        Contact contact=new Contact(name,phoneNumber,email);
         contactsManager.addContacts(contact);
         System.out.println("Contact added:"+contact);
     }
@@ -73,12 +73,12 @@ public class ContactsCLI {
         System.out.println("Search Contacts");
         System.out.println("Enter search query.");
         String search=scanner.nextLine();
-        ArrayList<MyContacts> results=contactsManager.searchContacts(search);
+        ArrayList<Contact> results=contactsManager.searchContacts(search);
         if(results.size()==0){
             System.out.println("No results found");
         }
         else {
-            for (MyContacts c:results){
+            for (Contact c:results){
                 System.out.println("your results found: ");
                 System.out.println(c);
             }
@@ -88,7 +88,7 @@ public class ContactsCLI {
         System.out.println("Update Contact");
         System.out.println("Enter name:");
         String name = scanner.nextLine();
-        MyContacts c = contactsManager.getContacts(name);
+        Contact c = contactsManager.getContacts(name);
         if (c == null) {
             System.out.println("contact not found");
             return;
@@ -110,7 +110,7 @@ public class ContactsCLI {
         System.out.println("Delete Contact");
         System.out.println("Enter name:");
         String name= scanner.nextLine();
-        MyContacts c=contactsManager.getContacts(name);
+        Contact c=contactsManager.getContacts(name);
         if(c==null){
             System.out.println("Contact not found.");
             return;

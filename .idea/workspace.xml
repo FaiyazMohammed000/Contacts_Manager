@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0873f8ec-7966-4efd-a15b-eccf35a31ed1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contacts Manager.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/manager/ContactsCLI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/manager/ContactsManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/manager/MyContacts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contacts.dat" beforeDir="false" afterPath="$PROJECT_DIR$/contacts.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/manager/ContactsCLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/manager/ContactsCLI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/manager/ContactsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/manager/ContactsManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/manager/MyContacts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/manager/Contact.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

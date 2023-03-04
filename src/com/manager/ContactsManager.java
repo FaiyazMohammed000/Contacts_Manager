@@ -2,22 +2,22 @@ package com.manager;
 import java.io.*;
 import java.util.*;
 public class ContactsManager {
-    private HashMap<String, MyContacts> contacts;
+    private HashMap<String, Contact> contacts;
 
     public ContactsManager() {
-        contacts = new HashMap<String, MyContacts>();
+        contacts = new HashMap<String, Contact>();
     }
 
-    public void addContacts(MyContacts contact) {
+    public void addContacts(Contact contact) {
         contacts.put(contact.getName(), contact);
     }
 
-    public MyContacts getContacts(String name) {
+    public Contact getContacts(String name) {
         return contacts.get(name);
     }
-    public ArrayList<MyContacts> searchContacts(String search) {
-        ArrayList<MyContacts> result = new ArrayList<>();
-        for (MyContacts contact : contacts.values()) {
+    public ArrayList<Contact> searchContacts(String search) {
+        ArrayList<Contact> result = new ArrayList<>();
+        for (Contact contact : contacts.values()) {
         if(contact.getName().toLowerCase().contains(search.toLowerCase())||contact.getPhoneNumber().toLowerCase().contains(search.toLowerCase())||contact.getEmail().toLowerCase().contains(search.toLowerCase())){
             result.add(contact);
         }
@@ -25,7 +25,7 @@ public class ContactsManager {
         return result ;
     }
     public void updateContacts(String name, String phoneNumber, String email) {
-        MyContacts contact = contacts.get(name);
+        Contact contact = contacts.get(name);
         contact.setPhoneNumber(phoneNumber);
         contact.setEmail(email);
     }
@@ -35,7 +35,7 @@ public class ContactsManager {
     public void importContacts(String fileName) throws Exception
     {
         ObjectInputStream input=new ObjectInputStream(new FileInputStream(fileName));
-        contacts=(HashMap<String,MyContacts>)input.readObject();
+        contacts=(HashMap<String, Contact>)input.readObject();
         input.readObject();
         input.close();
     }
